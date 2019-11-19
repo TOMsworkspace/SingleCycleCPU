@@ -1,0 +1,588 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Dec 14 15:04:29 2018
+# Process ID: 10572
+# Log file: C:/Users/chenwei/Desktop/project_4_extend/vivado.log
+# Journal file: C:/Users/chenwei/Desktop/project_4_extend\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chenwei/Desktop/project_4_extend/project_4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chenwei/Desktop'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/chenwei/Desktop' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/Users/chenwei/Desktop/project_4_extend'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilink/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 659.227 ; gain = 109.227
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292A6EB17A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210292A6EB17A]
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EB17A
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 14 15:06:47 2018] Launched synth_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/synth_1/runme.log
+[Fri Dec 14 15:06:47 2018] Launched impl_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/cpu_sim_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/ins_ROM.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/data_RAM/data_RAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/data_RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/sim/Ins_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/data_RAM/sim/data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module led7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/reg_stack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_stack
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/IOport.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOport
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/InsructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/data_selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/Address_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleScycleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sim_1/new/CPUsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilink/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 8569066b2df144358d9557e058c83df7 --debug typical --relax --mt 2 -L blk_mem_gen_v8_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port A1 [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port A2 [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port F [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ALU
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.data_RAM
+Compiling module xil_defaultlib.DataMemory
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.Ins_ROM
+Compiling module xil_defaultlib.InsructionMemory
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.reg_stack
+Compiling module xil_defaultlib.Address_decode
+Compiling module xil_defaultlib.IOport
+Compiling module xil_defaultlib.led7
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.addr_selector
+Compiling module xil_defaultlib.data_selector
+Compiling module xil_defaultlib.SingleScycleCPU
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot cpu_sim_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 2034325639 -regid "" -xml C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtal..."
+    (file "C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 14 15:11:14 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 737.676 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_sim.cpu.datamemeory.ram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_sim.cpu.InsMem.rom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 745.863 ; gain = 7.816
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 745.863 ; gain = 8.188
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 749.758 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/cpu_sim_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/ins_ROM.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/data_RAM/data_RAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/data_RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/sim/Ins_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/data_RAM/sim/data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module led7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/reg_stack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_stack
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/IOport.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOport
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/InsructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/data_selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/Address_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleScycleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sim_1/new/CPUsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilink/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 8569066b2df144358d9557e058c83df7 --debug typical --relax --mt 2 -L blk_mem_gen_v8_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port A1 [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port A2 [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port F [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ALU
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.data_RAM
+Compiling module xil_defaultlib.DataMemory
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.Ins_ROM
+Compiling module xil_defaultlib.InsructionMemory
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.reg_stack
+Compiling module xil_defaultlib.Address_decode
+Compiling module xil_defaultlib.IOport
+Compiling module xil_defaultlib.led7
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.addr_selector
+Compiling module xil_defaultlib.data_selector
+Compiling module xil_defaultlib.SingleScycleCPU
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot cpu_sim_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 4126131609 -regid "" -xml C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtal..."
+    (file "C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 14 15:12:43 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 750.352 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_sim.cpu.datamemeory.ram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_sim.cpu.InsMem.rom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 750.352 ; gain = 0.594
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 750.809 ; gain = 0.000
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/cpu_sim_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/elaborate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xelab.pb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'cpu_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/ins_ROM.coe'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/data_RAM/data_RAM.mif'
+INFO: [USF-XSim-66] Exported 'c:/Users/chenwei/Desktop/data_RAM.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+"xvlog -m64 --relax -prj cpu_sim_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/blk_mem_gen_v8_2/simulation/blk_mem_gen_v8_2.v" into library blk_mem_gen_v8_2
+INFO: [VRFC 10-311] analyzing module STATE_LOGIC_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_muxf7_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_clr_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_pre_v8_2
+INFO: [VRFC 10-311] analyzing module beh_vlog_ff_ce_clr_v8_2
+INFO: [VRFC 10-311] analyzing module write_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module read_netlist_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_write_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_read_wrapper_beh_v8_2
+INFO: [VRFC 10-311] analyzing module blk_mem_axi_regs_fwd_v8_2
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_output_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_softecc_output_reg_stage
+INFO: [VRFC 10-311] analyzing module BLK_MEM_GEN_v8_2_mem_module
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_v8_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/Ins_ROM/sim/Ins_ROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Ins_ROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/ip/data_RAM/sim/data_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-311] analyzing module led7
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addr_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/reg_stack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_stack
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/IOport.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IOport
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/InsructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InsructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/data_selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/Address_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Address_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleScycleCPU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sim_1/new/CPUsim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: F:/xilink/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 8569066b2df144358d9557e058c83df7 --debug typical --relax --mt 2 -L blk_mem_gen_v8_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cpu_sim_behav xil_defaultlib.cpu_sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port A1 [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:76]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port A2 [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:66]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port F [C:/Users/chenwei/Desktop/project_4_extend/project_4.srcs/sources_1/new/SingleScycleCPU.v:73]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.ALU
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_output_stage(C_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_softecc_output_...
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.data_RAM
+Compiling module xil_defaultlib.DataMemory
+Compiling module blk_mem_gen_v8_2.BLK_MEM_GEN_v8_2_mem_module(C_CO...
+Compiling module blk_mem_gen_v8_2.blk_mem_gen_v8_2(C_FAMILY="artix...
+Compiling module xil_defaultlib.Ins_ROM
+Compiling module xil_defaultlib.InsructionMemory
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.reg_stack
+Compiling module xil_defaultlib.Address_decode
+Compiling module xil_defaultlib.IOport
+Compiling module xil_defaultlib.led7
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.addr_selector
+Compiling module xil_defaultlib.data_selector
+Compiling module xil_defaultlib.SingleScycleCPU
+Compiling module xil_defaultlib.cpu_sim
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot cpu_sim_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 3120294870 -regid "" -xml C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtal..."
+    (file "C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav/xsim.dir/cpu_sim_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 14 15:14:30 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 750.809 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chenwei/Desktop/project_4_extend/project_4.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "cpu_sim_behav -key {Behavioral:sim_1:Functional:cpu_sim} -tclbatch {cpu_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source cpu_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_sim.cpu.datamemeory.ram.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module cpu_sim.cpu.InsMem.rom.inst.native_mem_module.blk_mem_gen_v8_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 765.609 ; gain = 5.328
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 765.609 ; gain = 14.801
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'cpu_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 765.609 ; gain = 14.801
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 14 15:17:26 2018] Launched synth_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/synth_1/runme.log
+[Fri Dec 14 15:17:26 2018] Launched impl_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 14 15:21:07 2018] Launched synth_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/synth_1/runme.log
+[Fri Dec 14 15:21:07 2018] Launched impl_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Fri Dec 14 15:32:43 2018] Launched synth_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/synth_1/runme.log
+[Fri Dec 14 15:32:43 2018] Launched impl_1...
+Run output will be captured here: C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-3175] Target jsn-Nexys4DDR-210292A6EB17A is no longer available.
+Please use disconnect_hw_server to close the current server connection. Check cable connectivity and that the target board is powered up.
+Restart the hw_server application running on host localhost, port 3121 and then use connect_hw_server to re-establish connection to target.
+close_hw_target
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EB17A
+create_project SingleCycleCPU C:/Users/chenwei/Desktop/SingleCycleCPU -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilink/Vivado/2015.2/data/ip'.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 823.195 ; gain = 0.000
+file mkdir C:/Users/chenwei/Desktop/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new
+close [ open C:/Users/chenwei/Desktop/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCPU.v w ]
+add_files C:/Users/chenwei/Desktop/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCPU.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+current_project project_4
+current_project SingleCycleCPU
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project

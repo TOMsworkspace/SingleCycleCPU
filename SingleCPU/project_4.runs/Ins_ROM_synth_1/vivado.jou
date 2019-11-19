@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Dec 19 13:28:38 2018
+# Process ID: 284
+# Log file: C:/Users/chenwei/Desktop/SingleCPU/project_4.runs/Ins_ROM_synth_1/Ins_ROM.vds
+# Journal file: C:/Users/chenwei/Desktop/SingleCPU/project_4.runs/Ins_ROM_synth_1\vivado.jou
+#-----------------------------------------------------------
+source Ins_ROM.tcl -notrace

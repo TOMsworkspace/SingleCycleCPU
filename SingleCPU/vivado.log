@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Dec 21 12:05:00 2018
+# Process ID: 1380
+# Log file: C:/Users/chenwei/Desktop/SingleCPU/vivado.log
+# Journal file: C:/Users/chenwei/Desktop/SingleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chenwei/Desktop/SingleCPU/project_4.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/chenwei/Desktop/ins_ROM.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/chenwei/Desktop/data_RAM.coe'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/chenwei/Desktop/sys_rom.coe'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chenwei/Desktop'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/chenwei/Desktop' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/Users/chenwei/Desktop/SingleCPU'.)
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilink/Vivado/2015.2/data/ip'.
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/chenwei/Desktop/SingleCPU/project_4.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/chenwei/Desktop/SingleCPU/project_4.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Fri Dec 21 12:05:46 2018. For additional details about this file, please refer to the WebTalk help file at F:/xilink/Vivado/2015.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 58.395 ; gain = 0.020
+INFO: [Common 17-206] Exiting Webtalk at Fri Dec 21 12:05:46 2018...
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 21 12:05:52 2018...

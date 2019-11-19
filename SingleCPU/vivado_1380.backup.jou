@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Dec 19 12:16:13 2018
+# Process ID: 3420
+# Log file: C:/Users/chenwei/Desktop/SingleCPU/vivado.log
+# Journal file: C:/Users/chenwei/Desktop/SingleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chenwei/Desktop/SingleCPU/project_4.xpr
+launch_simulation
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+set_property -dict [list CONFIG.Write_Depth_A {1024} CONFIG.Coe_File {F:/课程/计算机组成原理/Minisys1Av2.2/output/prgmip32.coe}] [get_ips Ins_ROM]
+generate_target all [get_files  C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.xci]
+reset_run Ins_ROM_synth_1
+launch_run -jobs 2 Ins_ROM_synth_1
+set_property -dict [list CONFIG.Write_Depth_A {1024} CONFIG.Coe_File {F:/课程/计算机组成原理/Minisys1Av2.2/output/dmem32.coe}] [get_ips data_RAM]
+generate_target all [get_files  C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/sources_1/ip/data_RAM/data_RAM.xci]
+reset_run data_RAM_synth_1
+launch_run -jobs 2 data_RAM_synth_1
+close_sim
+launch_simulation
+source cpu_sim.tcl
+generate_target all [get_files  C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.xci]
+reset_run Ins_ROM_synth_1
+launch_run -jobs 2 Ins_ROM_synth_1
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+remove_files -fileset constrs_1 C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/constrs_1/new/CPU.xdc
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {IOinput[15]} {IOinput[14]} {IOinput[13]} {IOinput[12]} {IOinput[11]} {IOinput[10]} {IOinput[9]} {IOinput[8]} {IOinput[7]} {IOinput[6]} {IOinput[5]} {IOinput[4]} {IOinput[3]} {IOinput[2]} {IOinput[1]} {IOinput[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {IOoutput[15]} {IOoutput[14]} {IOoutput[13]} {IOoutput[12]} {IOoutput[11]} {IOoutput[10]} {IOoutput[9]} {IOoutput[8]} {IOoutput[7]} {IOoutput[6]} {IOoutput[5]} {IOoutput[4]} {IOoutput[3]} {IOoutput[2]} {IOoutput[1]} {IOoutput[0]}]]
+place_ports clk E3
+place_ports reset C12
+place_ports {IOinput[0]} J15
+place_ports {IOinput[1]} L16
+place_ports {IOinput[2]} M13
+startgroup
+set_property package_pin "" [get_ports [list  {IOoutput[6]}]]
+place_ports {IOinput[3]} R15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {IOoutput[8]}]]
+place_ports {IOinput[4]} R17
+endgroup
+place_ports {IOinput[5]} T18
+startgroup
+set_property package_pin "" [get_ports [list  {IOinput[15]}]]
+place_ports {IOinput[6]} U18
+endgroup
+place_ports {IOinput[7]} R13
+place_ports {IOinput[8]} T8
+place_ports {IOinput[9]} U8
+startgroup
+set_property package_pin "" [get_ports [list  {IOoutput[3]}]]
+place_ports {IOinput[10]} R16
+endgroup
+place_ports {IOinput[11]} T13
+place_ports {IOinput[12]} H6
+place_ports {IOinput[13]} U12
+place_ports {IOinput[14]} U11
+place_ports {IOinput[15]} V10
+place_ports {IOoutput[0]} H17
+place_ports {IOoutput[1]} K15
+place_ports {IOoutput[2]} J13
+place_ports {IOoutput[3]} N14
+place_ports {IOoutput[4]} R18
+place_ports {IOoutput[5]} V17
+place_ports {IOoutput[6]} U17
+place_ports {IOoutput[7]} U16
+place_ports {IOoutput[8]} V16
+place_ports {IOoutput[9]} T14
+place_ports {IOoutput[9]} T15
+place_ports {IOoutput[10]} U14
+place_ports {IOoutput[11]} T16
+place_ports {IOoutput[12]} V15
+place_ports {IOoutput[13]} V14
+place_ports {IOoutput[14]} V12
+place_ports {IOoutput[15]} V11
+set_property IOSTANDARD LVCMOS33 [get_ports [list reset]]
+close [ open C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/constrs_1/new/CPU.xdc w ]
+add_files -fileset constrs_1 C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/constrs_1/new/CPU.xdc
+set_property target_constrs_file C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/constrs_1/new/CPU.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292709457A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210292709457A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/SingleCPU/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/SingleCPU/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim

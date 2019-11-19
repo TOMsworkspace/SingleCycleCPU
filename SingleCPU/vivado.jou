@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Dec 21 12:05:00 2018
+# Process ID: 1380
+# Log file: C:/Users/chenwei/Desktop/SingleCPU/vivado.log
+# Journal file: C:/Users/chenwei/Desktop/SingleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chenwei/Desktop/SingleCPU/project_4.xpr

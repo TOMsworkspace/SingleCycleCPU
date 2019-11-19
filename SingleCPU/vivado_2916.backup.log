@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Dec 15 20:53:46 2018
+# Process ID: 480
+# Log file: C:/Users/chenwei/Desktop/SingleCPU/vivado.log
+# Journal file: C:/Users/chenwei/Desktop/SingleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chenwei/Desktop/SingleCPU/project_4.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/chenwei/Desktop/project_4_extend' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chenwei/Desktop'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/chenwei/Desktop' may become invalid. A better location for the repostory would be in a path adjacent to the project. (Current project location is 'c:/Users/chenwei/Desktop/SingleCPU'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/xilink/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 635.367 ; gain = 80.035
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 15 20:56:11 2018...

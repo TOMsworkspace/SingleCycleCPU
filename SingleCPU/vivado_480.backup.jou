@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Dec 14 15:04:29 2018
+# Process ID: 10572
+# Log file: C:/Users/chenwei/Desktop/project_4_extend/vivado.log
+# Journal file: C:/Users/chenwei/Desktop/project_4_extend\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chenwei/Desktop/project_4_extend/project_4.xpr
+open_hw
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210292A6EB17A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210292A6EB17A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/chenwei/Desktop/project_4_extend/project_4.runs/impl_1/SingleScycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_hw_target
+create_project SingleCycleCPU C:/Users/chenwei/Desktop/SingleCycleCPU -part xc7a100tcsg324-1
+file mkdir C:/Users/chenwei/Desktop/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new
+close [ open C:/Users/chenwei/Desktop/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCPU.v w ]
+add_files C:/Users/chenwei/Desktop/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCPU.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+current_project project_4
+current_project SingleCycleCPU
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close_project

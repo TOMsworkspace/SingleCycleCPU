@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Dec 16 15:21:40 2018
+# Process ID: 4056
+# Log file: C:/Users/chenwei/Desktop/SingleCPU/vivado.log
+# Journal file: C:/Users/chenwei/Desktop/SingleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/chenwei/Desktop/SingleCPU/project_4.xpr
+set_property -dict [list CONFIG.Coe_File {C:/Users/chenwei/Desktop/sys_rom.coe}] [get_ips Ins_ROM]
+generate_target all [get_files  C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.xci]
+reset_run Ins_ROM_synth_1
+launch_run -jobs 2 Ins_ROM_synth_1
+launch_simulation
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+launch_simulation
+source cpu_sim.tcl
+set_property -dict [list CONFIG.Coe_File {C:/Users/chenwei/Desktop/sys_rom.coe}] [get_ips Ins_ROM]
+generate_target all [get_files  C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.xci]
+reset_run Ins_ROM_synth_1
+launch_run -jobs 2 Ins_ROM_synth_1
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+set_property -dict [list CONFIG.Coe_File {C:/Users/chenwei/Desktop/sys_rom.coe}] [get_ips Ins_ROM]
+generate_target all [get_files  C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.xci]
+reset_run Ins_ROM_synth_1
+launch_run -jobs 2 Ins_ROM_synth_1
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+set_property -dict [list CONFIG.Coe_File {C:/Users/chenwei/Desktop/sys_rom.coe}] [get_ips Ins_ROM]
+generate_target all [get_files  C:/Users/chenwei/Desktop/SingleCPU/project_4.srcs/sources_1/ip/Ins_ROM/Ins_ROM.xci]
+reset_run Ins_ROM_synth_1
+launch_run -jobs 2 Ins_ROM_synth_1
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
+launch_simulation
+source cpu_sim.tcl
+close_sim
