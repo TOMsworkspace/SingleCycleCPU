@@ -1,5 +1,6 @@
 # SingleCycleCPU
-verliog 实现简化版单周期MIPS32 指令CPU
+一个Vivado 项目
+verilog 实现简化版单周期MIPS32 指令CPU
 
 ## 开发环境：
 PC机一台，Digilent Nexys 4TM开发板，Xilinx Vivado开发套件
